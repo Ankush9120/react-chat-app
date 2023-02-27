@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Shantell+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  --black1: rgb(20 20 20);
+}
+
+*{
+  outline: none;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: var(--black1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.userBar {
+  background-color: #20232b;
+}
+
+.chatContainer{
+  background-color: #1d1e24;
+}
+
+.chatMessage , .inputBox{
+  background-color: #16171b;
+}
+
+.selectedChat{
+  background: #1a1e23;
+}
+
+header > span{
+  font-family: 'Shantell Sans', cursive;
+}
+
+.registerBox input , .loginBox input{
+  background: var(--black1);
+}
