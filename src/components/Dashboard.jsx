@@ -1,58 +1,26 @@
 import React from "react";
+import VoiceCallIcon from "../assets/icons/voice_call.svg";
+import VideoCallIcon from "../assets/icons/video_call.svg";
+import UsersBar from "./UsersBar";
+
 const Dashboard = () => {
   return (
     <div className="flex justify-center h-screen text-white">
-
       {/* User Bar  */}
-      <div className="userBar p-2 flex flex-col gap-2">
-
-        <div className="selectedChat rounded-lg p-3 flex gap-3">
-          <div className="w-12 h-12 rounded-full overflow-hidden">
-            <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="img"
-              className="object-contain"
-            />
-          </div>
-
-          <div>
-            <div className="flex items-center gap-3">
-              <span className="text-base">Ankush Gupta</span>
-              <div className="bg-green-500 h-2 w-2 rounded-full"></div>
-              <span className="text-gray-500 text-xs">10:20 PM</span>
-            </div>
-
-            <span className="text-center text-xs">Message ...</span>
-          </div>
-        </div>
-        
-        <div className="rounded-lg p-3 flex gap-3">
-          <div className="w-12 h-12 rounded-full overflow-hidden">
-            <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="img"
-              className="object-contain"
-            />
-          </div>
-
-          <div>
-            <div className="flex items-center gap-3">
-              <span className="text-base">Ankush Gupta</span>
-              <div className="bg-green-500 h-2 w-2 rounded-full"></div>
-              <span className="text-gray-500 text-xs">10:20 PM</span>
-            </div>
-
-            <span className="text-center text-xs">Message ...</span>
-          </div>
-        </div>
-
-      </div>
+      <UsersBar />
 
       {/* CHAT BOX 1 */}
 
       <div className="chatContainer flex flex-col w-2/5">
-        <header className="bg-black p-3 px-4 mb-12">
-          <span className="text-gray-400">Conversation with</span> Ankush Gupta
+        <header className="bg-black flex justify-between p-3 px-4 mb-12">
+          <div>
+            <span className="text-gray-400">Conversation with</span> Ankush
+            Gupta
+          </div>
+          <div className="flex items-center gap-4">
+            <img className="h-5" src={VoiceCallIcon} alt="" />
+            <img className="h-6" src={VideoCallIcon} alt="" />
+          </div>
         </header>
 
         <div className="grow flex flex-col">
@@ -66,11 +34,13 @@ const Dashboard = () => {
 
           {/* Senders Box  */}
           <div className="chatMessage w-64 p-4 ml-4 rounded-2xl rounded-tl-none relative mt-16">
-
             <div className="absolute w-full flex gap-2 items-center -top-10">
-
               <div className="h-7 w-7 rounded-full overflow-hidden">
-                <img className="object-contain" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+                <img
+                  className="object-contain"
+                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
               </div>
 
               <span className="text-xs text-gray-300">Ankush Gupta</span>
@@ -79,7 +49,6 @@ const Dashboard = () => {
             </div>
 
             <p>Hello !!</p>
-
           </div>
         </div>
 
