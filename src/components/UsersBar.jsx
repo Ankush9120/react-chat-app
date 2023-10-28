@@ -1,5 +1,6 @@
 import React from "react";
 import SearchIcon from "../assets/icons/search.svg";
+import LogoutIcon from "../assets/icons/logout.svg";
 import User from "./User";
 
 const UsersBar = () => {
@@ -15,7 +16,11 @@ const UsersBar = () => {
   ];
 
   return (
-    <div className="userBar py-4 px-2 flex flex-col gap-4 w-[320px]">
+    <div className="userBar py-3 px-4 flex flex-col gap-4 w-[340px]">
+      <div className="font-semibold text-lg flex justify-between items-center">
+        <div>Chat <span className="text-yellow-300">!</span>O</div>
+        <img src={LogoutIcon} className="h-6" alt="" />
+      </div>
       <div className="flex justify-between p-2 border border-white border-opacity-50 rounded-lg">
         <input
           className="bg-transparent w-full px-2"

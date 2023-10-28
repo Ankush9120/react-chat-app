@@ -9,8 +9,6 @@ import Register from './components/Register';
 const App = () => {
   return (
     <div>
-      <div className="absolute left-3 top-3 text-2xl font-bold text-white">Chat.io</div>
-
       <Dashboard />
       {/* <Register /> */}
       {/* <Login /> */}
