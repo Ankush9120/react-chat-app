@@ -31,47 +31,8 @@ const UsersBar = () => {
       </div>
 
       {userList.map((data,index) => {
-        return <User data={data} index={index} />;
+        return <User data={data} index={index} key={index} />;
       })}
-      {/* <div className="selectedChat rounded-lg p-3 flex gap-3">
-        <div className="w-12 h-12 rounded-full overflow-hidden">
-          <img
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt="img"
-            className="object-contain"
-          />
-        </div>
-
-        <div>
-          <div className="flex items-center gap-3">
-            <span className="text-base">Ankush Gupta</span>
-            <div className="bg-green-500 h-2 w-2 rounded-full"></div>
-            <span className="text-gray-500 text-xs">10:20 PM</span>
-          </div>
-
-          <span className="text-center text-xs">Message ...</span>
-        </div>
-      </div>
-
-      <div className="rounded-lg p-3 flex gap-3">
-        <div className="w-12 h-12 rounded-full overflow-hidden">
-          <img
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt="img"
-            className="object-contain"
-          />
-        </div>
-
-        <div>
-          <div className="flex items-center gap-3">
-            <span className="text-base">Ankush Gupta</span>
-            <div className="bg-green-500 h-2 w-2 rounded-full"></div>
-            <span className="text-gray-500 text-xs">10:20 PM</span>
-          </div>
-
-          <span className="text-center text-xs">Message ...</span>
-        </div>
-      </div> */}
     </div>
   );
 };
